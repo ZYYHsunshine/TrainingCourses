@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>测试登录</title>
+	</head>
+	<body>
+		<p>请登录</p>
+		<p>用户名<input id="username" type="text" name="username" valus=""></p>
+		<p>密码<input id="password" type="text" name="password" valus=""></p><br>
+		<button type="button" onclick="check();">登录</button><br>
+			<script type="text/javascript">
+				function check()
+				{
+					var username = document.getElementById("username");
+					var password = document.getElementById("password");
+					if(username.value=="123"&&password.value=="123")
+					{
+					alert("登录成功");
+					}
+					else if(username.value==""&&password.value=="")
+					{
+					alert("请输入用户名和密码");
+					}
+					else
+					{
+					alert("密码错误")
+					password.value="";
+					}
+				}
+			</script>
+		</body>
+</html>
+ 
